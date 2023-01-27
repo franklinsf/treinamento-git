@@ -7,6 +7,6 @@ on:
 
 jobs:
   open-pr-to-develop:
-    uses: create.yml
+    uses: franklinsf/treinamento-git/.github/create.yml@feature/test
     with:
       target-branch: 'develop'
