@@ -1,0 +1,22 @@
+{
+  "name": "treinamento-git",
+  "version": "1.0.0",
+  "description": "projeto usado para fazer treinamento de controle de versão com o git",
+  "main": "soma.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franklinsf/treinamento-git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franklinsf/treinamento-git/issues"
+  },
+  "homepage": "https://github.com/franklinsf/treinamento-git#readme",
+  "dependencies": {
+    "@octokit/core": "^4.2.0"
+  }
+}
