@@ -1,0 +1,12 @@
+name: "1 - [FEAT] Open PR"
+
+on:
+  push:
+    branches:
+      - 'feature**'
+
+jobs:
+  open-pr-to-develop:
+    uses: franklinsf/treinamento-git/.github/workflows/create.yml@feature/test
+    with:
+      target-branch: 'develop'
