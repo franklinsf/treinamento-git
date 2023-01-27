@@ -130,7 +130,7 @@ jobs:
             core.setOutput("use-app",useApp)
 
 
-      - name: Evaluate secrets
+      # - name: Evaluate secrets
         id: evaluate_secrets
         run: |
           if [[ '${{ inputs.enable-github-app }}' != 'true' ]] && [[ '${{ steps.check-open-prs.outputs.use-app }}' != 'true' ]]; then
@@ -170,7 +170,7 @@ jobs:
             echo "token=BH" >> $GITHUB_OUTPUT
           fi
 
-      - name: Get Token
+      # - name: Get Token
         id: get_workflow_token
         if: steps.evaluate_secrets.outputs.token == 'BH'
         uses: peter-murray/workflow-application-token-action@v2
@@ -182,7 +182,8 @@ jobs:
         id: auto-pull-request
         uses: actions/github-script@v6
         with:
-          github-token: ${{ steps.get_workflow_token.outputs.token || github.token }}
+          # github-token: ${{ steps.get_workflow_token.outputs.token || github.token }}
+          github-token: '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'
           script: |
             const listLabel = [
               {
