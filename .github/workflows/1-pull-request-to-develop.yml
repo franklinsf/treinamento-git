@@ -1,0 +1,12 @@
+name: "1 - [FEAT] Open PR"
+
+on:
+  push:
+    branches:
+      - ''feature**
+
+jobs:
+  open-pr-to-develop:
+    uses: create.yml
+    with:
+      target-branch: 'develop'
