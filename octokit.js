@@ -15,7 +15,7 @@ async function init() {
         branch: 'main'
       })
 
-    console.log('Response: ',response)
+    console.log('Response 2: ',response)
 }
 
 init()
